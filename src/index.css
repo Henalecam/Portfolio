@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #F00;
+body {
+  background-color: #bfb6ae;
+  font-family: 'vt323', sans-serif;
+
 }

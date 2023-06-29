@@ -17,7 +17,7 @@ export const ParticlesComponent = () => {
     []
   );
   return (<>
-      <Particles className='opacity-50 z-[-1] fixed top-0 left-0 w-screen h-screen'
+      <Particles className='opacity-30'
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -25,6 +25,12 @@ export const ParticlesComponent = () => {
           fpsLimit: 120,
           interactivity: {
             events: {
+              onClick: {
+                enable: true,
+                mode: 'push',
+                
+              },
+
               onHover: {
                 enable: true,
                 mode: 'repulse',
@@ -45,7 +51,7 @@ export const ParticlesComponent = () => {
           },
           particles: {
             color: {
-              value: '#ffffff',
+              value: '#592519',
             },
             move: {
               direction: 'bottom',
@@ -56,11 +62,7 @@ export const ParticlesComponent = () => {
               straight: false,
             },
             links: {
-              color: '#00ddff',
-              distance: 100,
-              enable: true,
-              opacity: 0.5,
-              width: 3,
+              enable: false,
             },
             collisions: {
               enable: true,
@@ -70,27 +72,14 @@ export const ParticlesComponent = () => {
                 enable: true,
                 area: 800,
               },
-              value: 100,
-            },
-            opacity: {
-              animation: {
-                enable: true,
-                speed: 0.05,
-                sync: true,
-                startValue: 'min',
-                count: 1,
-                destroy: 'min',
-              },
-              value: {
-                min: 0,
-                max: 0.5,
-              },
+              value: 200,
+              max: 200,
             },
             shape: {
-              type:'circle',
+              type: 'circle',
             },
             size: {
-              value: { min: 1, max: 3 },
+              value: { min: 0.75, max: 2 },
             },
           },
           detectRetina: true,
