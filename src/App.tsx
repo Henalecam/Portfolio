@@ -6,10 +6,13 @@ export function App() {
     <ParticlesComponent />
     <div className="bg-gradient-to-tr from-primary  via-secondary via-70% to-tertiary">
     <div className='bg-gradient-to-br from-transparent to-primary '></div>
+    <section id="Hero-Space" className='bg-gradient-to-b from-primary to-transparent to-70% h-screen w-screen inline-block bg-opacity-25 bg-cover'>
+        <div  >
         <Hero />
-    <div className='h-[5000px]'>
+        </div>
+    </section> 
 
-    </div>
+    <div className='h-[5000px]'></div>
 
     </div>
     </>
