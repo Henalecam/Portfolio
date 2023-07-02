@@ -1,20 +1,25 @@
-import Hero from './components/Hero'
-import { ParticlesComponent } from './components/ParticlesComponent'
+import Hero from './components/Hero';
+import NavBar from './components/NavBar';
+import { ParticlesComponent } from './components/ParticlesComponent';
 export function App() {
   return (
     <>
-    <ParticlesComponent />
-    <div className="bg-gradient-to-tr from-primary  via-secondary via-70% to-tertiary">
-    <div className='bg-gradient-to-br from-transparent to-primary '></div>
-    <section id="Hero-Space" className='bg-gradient-to-b from-primary to-transparent to-70% h-screen w-screen inline-block bg-opacity-25 bg-cover'>
-        <div  >
-        <Hero />
+      
+        <ParticlesComponent />
+        <NavBar />
+        <div className="bg-gradient-to-tr from-primary  via-secondary via-70% to-tertiary">
+          <div className="bg-gradient-to-br from-transparent to-primary "></div>
+          <header
+            id="Hero-Space"
+            className="inline-block h-full w-full bg-opacity-25 bg-gradient-to-b from-primary to-transparent to-70% bg-cover"
+          >
+            <div>
+              <Hero />
+            </div>
+          </header>
+
+          <div className="h-[2000px]"></div>
         </div>
-    </section> 
-
-    <div className='h-[5000px]'></div>
-
-    </div>
     </>
-  )
+  );
 }
