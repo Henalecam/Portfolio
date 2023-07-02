@@ -1,15 +1,15 @@
-import Henrique from '../assets/Henrique.png';
+import Henrique from "../assets/Henrique.png";
 
-import Github from '../assets/Github.svg';
+import Github from "../assets/Github.svg";
 
-import Linkedin from '../assets/Linkedin.svg';
+import Linkedin from "../assets/Linkedin.svg";
 
-import Whatsapp from '../assets/Whatsapp.svg';
+import Whatsapp from "../assets/Whatsapp.svg";
 
 function Hero() {
   return (
     <>
-      <div className="family-roboto flex flex-col h-full justify-center w-full items-center mt-[10%] ">
+      <div className="family-roboto mt-[10%] flex h-full w-full flex-col items-center justify-center ">
         <img
           src={Henrique}
           alt=""
@@ -24,29 +24,32 @@ function Hero() {
             Back-end Developer
           </h2>
           <div className="mt-5 flex justify-center space-x-8">
-  <a href="">
-    <img
-      src={Github}
-      alt=""
-      className="h-16 rounded-full border border-primary bg-quinary"
-    />
-  </a>
-  <a href="">
-    <img
-      src={Linkedin}
-      alt=""
-      className="h-16 rounded-full border border-primary bg-quinary"
-    />
-  </a>
-  <a href="">
-    <img
-      src={Whatsapp}
-      alt=""
-      className="h-16 rounded-full border border-primary bg-quinary"
-    />
-  </a>
-</div>
-
+            <a href="">
+              <img
+                src={Github}
+                alt=""
+                className="h-16 rounded-full border border-primary bg-quinary"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Linkedin}
+                alt=""
+                className="h-16 rounded-full border border-primary bg-quinary"
+              />
+            </a>
+            <a href="">
+              <img
+                src={Whatsapp}
+                alt=""
+                className="h-16 rounded-full border border-primary bg-quinary"
+              />
+            </a>
+          </div>
+          <h3 className=" w-screen font-bold bg-white bg-cover bg-opacity-25 mt-10 text-quinary">
+            Always learning and doing my best to be a better developer. This
+            portfolio is to compare my skills and knowledge in the future.
+          </h3>
         </div>
       </div>
     </>

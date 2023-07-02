@@ -1,3 +1,4 @@
+import About from './components/About';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import { ParticlesComponent } from './components/ParticlesComponent';
@@ -17,6 +18,13 @@ export function App() {
               <Hero />
             </div>
           </header>
+            <main>
+              <section id='About'>
+                <div>
+                  <About />
+                </div>
+              </section>
+            </main>
 
           <div className="h-[2000px]"></div>
         </div>
